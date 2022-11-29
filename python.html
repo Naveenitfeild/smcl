@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+	<style>
+		div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+	background-color: black ;
+	
+}
+
+nav#navbar a {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px 0;
+	text-decoration: none;
+	color: orange;
+}
+
+main#main-doc {
+	grid-area: mainContent;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+
+header {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+code {
+	background-color: lightcyan;
+	display: block;
+	padding: 20px;
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="main-body" style="background-color: lightblue; ;">
+		<nav id="navbar">
+			<header style="color: blue;"> python</header>
+			<a href="#Intro" class="nav-link">
+				What is python </a>
+			<a href="#Object" class="nav-link">
+				Advantages </a>
+			<a href="#Inheritance" class="nav-link">
+				syntax</a>
+			<a href="#Polymorphism" class="nav-link">
+				uses of python</a>
+			<a href="#Abstraction" class="nav-link">
+				Install python </a>
+				<a href="#dev-Image" class="nav-link">
+					dev-Image</a>
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="Intro">
+				<header>
+					What is python?
+				</header>
+				<p>
+					Python is a popular programming language. 
+					It was created by Guido van Rossum, and released in 1991.
+				</p>
+				<p>
+					Python is a great general-purpose programming language that’s becoming increasingly popular for data science.
+					 Demand for these skills is rising because companies want to harvest insights from their data.
+					  This introduction to Python course is one of the most popular courses on DataCamp.
+					  Python is one of the most widely used user-friendly programming languages.
+					  It is an open-source and easy to learn programming language developed in the 1990s. 
+					  It is mostly used in Machine learning, Artificial intelligence, Big Data, GUI based desktop applications,
+					   and Robotics.
+
+					<br><br>Let us now look at the program :<br>
+				</p>
+				<code>
+					x=5
+					y="naveen"
+					print(x)
+					print(y)
+				</code>
+				<br>
+				<p> python was designed for readability,and 
+					<br>python uses new lines to complete a command.
+				</p>
+				<ul>
+					<li>Advantages</li>
+					<li>syntax</li>
+					<li>Polymorphism</li>
+					<li>Abstraction</li>
+					<li>Encapsulation</li>
+				</ul>
+			</section>
+
+			<section class="main-section" id="Object">
+				<header>
+					Advantages
+				</header>
+				<p>
+					Python is easy to read, easy to understand, and easy to write.
+                    It integrates with other programming languages like C, C++, and Java.
+                    Python executes code line-by-line, so it is easy for the programmer to find the error that occurred in the code.
+                    Python is platform-independent means you can write code once and run it anywhere.
+				</p>
+				<p>Presence of third-party modules 
+					Extensive support libraries(NumPy for numerical calculations, Pandas for data analytics, etc.) 
+					Open source and large active community base 
+					Versatile, Easy to read, learn and write
+					User-friendly data structures 
+					High-level language 
+					Dynamically typed language(No need to mention data type based on the value assigned, it takes data type) 
+					Object-Oriented and Procedural  Programming language
+					Portable and Interactive
+					Ideal for prototypes – provide more functionality with less coding
+					Highly Efficient(Python’s clean object-oriented design provides enhanced process control, and the language is equipped with excellent text processing and integration capabilities, as well as its own unit testing framework, which makes it more efficient.)
+					Internet of Things(IoT) Opportunities
+					Interpreted Language
+					Portable across Operating systems.
+					<br>
+					<br>
+					<b>Productivity has Increased</b><br>
+					Users can create new kinds of applications using the Python programming language. Because of its versatility, this language permits the operator to try new things. Because of the language, the user is not prevented from trying something new.
+					 Python is favored in these scenarios since other programming languages lack the flexibility and freedom that Python does.
+				</p>
+			</section>
+
+			<section class="main-section" id="Inheritance">
+				<header>
+					syntax
+				</header>
+				 <code>
+					>>>print "Hello, Python!"<br> Hello, Python!
+				 </code>
+				<p>
+					Lines and Indentation:
+				</p>
+				<code>
+					if True:
+					print "True"
+					else:
+					   print "False"
+				</code>
+				 <br>
+				 <code>
+					
+					import sys
+
+					try:
+					   # open file stream
+					   file = open(file_name, "w")
+					except IOError:
+					   print "There was an error writing to", file_name
+					   sys.exit()
+					print "Enter '", file_finish,
+					print "' When finished"
+					while file_text != file_finish:
+					   file_text = raw_input("Enter text: ")
+					   if file_text == file_finish:
+						  # close the file
+						  file.close
+						  break
+					   file.write(file_text)
+					   file.write("\n")
+					file.close()
+					file_name = raw_input("Enter filename: ")
+					if len(file_name) == 0:
+					   print "Next time please enter something"
+					   sys.exit()
+					try:
+					   file = open(file_name, "r")
+					except IOError:
+					   print "There was an error reading file"
+					   sys.exit()
+					file_text = file.read()
+					file.close()
+					print file_text
+				 </code>
+				 <p>Multi-Line Statements</p>
+				 <br><code>
+					total = item_one + \
+                         item_two + \
+                        item_three
+				 </code>
+			</section>
+
+			<section class="main-section" id="Polymorphism">
+				<header>
+					uses of python
+				</header>
+				<p>
+					Python is commonly used for developing websites and software,
+					 task automation,<br>
+					data analysis, <br>
+					and data visualization.
+					 Since it’s relatively easy to learn,
+					  Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, 
+					  like organizing finances.
+				</p>
+                 <br>
+
+				<p> <b>AI & Machine Learning:</b><br>
+					It is widely thought that Python is the best programming language for Artificial Intelligence (AI) because of its syntaxes being simple and quickly learnt. When it comes to machine learning, the ideas exchange platform, “Towards Data Science”, tells us that 57% of data scientists and machine learning developers utilise Python, with 33% prioritising it for development.
+				</p><br>
+				 <p><b>Data Analytics:</b><br>
+					Many of the most popular data mining and analytics tools are written in Python. As a result, it is an excellent tool for data science. Python’s tools allow developers to separate important and relevant data. Not only is big data useful for retaining customers, but it can also help organisations learn more about themselves. This type of information can show businesses where their weaknesses are and allow them to react once identified. 
+				</p>
+			</section>
+
+			<section class="main-section" id="Abstraction">
+				<header>
+					Install python
+				</header>
+
+				<p>
+					<b>Step 1:</b> Download the Python Installer binaries. Open the official Python website in your web browser. ...
+					<br><b>Step 2:</b> Run the Executable Installer. Once the installer is downloaded, run the Python installer. ...
+					<br><b>Step 3:</b> Add Python to environmental variables. ...
+					<br><b>Step 4:</b> Verify the Python Installation.
+				</p>
+
+			</section>
+
+			
+			
+			<br>
+			<br>
+			
+			<br>
+			<section class="main-section" id="dev-Image">
+				<header>
+					 dev-Image
+				</header>
+				 <img src="py(1).jpg" alt="" width="100%">
+				 <img src="py(2).png" alt="" width="100%">
+			</section>
+		</main>
+	</div>
+</body>
+</html>
